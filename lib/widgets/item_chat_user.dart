@@ -17,9 +17,11 @@ class ItemChatUser extends StatelessWidget {
           child: Row(
             crossAxisAlignment: CrossAxisAlignment.end,
             children: [
-              ChatBalloon(
-                bgColor: Colors.orangeAccent.shade100,
-                text: text,
+              Expanded(
+                child: ChatBalloon(
+                  bgColor: Colors.orangeAccent.shade100,
+                  text: text,
+                ),
               ),
               const SizedBox(
                 width: 5,

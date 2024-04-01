@@ -18,8 +18,10 @@ class ItemChatAI extends StatelessWidget {
           const SizedBox(
             width: 5,
           ),
-          ChatBalloon(
-            text: text,
+          Expanded(
+            child: ChatBalloon(
+              text: text,
+            ),
           )
         ],
       ),
